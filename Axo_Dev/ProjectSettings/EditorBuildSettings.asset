@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/menu.unity
+    guid: 27aacf0fbedc42941851128aa3238825
+  - enabled: 1
+    path: Assets/Scenes/Mewarnai.unity
+    guid: 1ae71a42a70220743a17457543782bbb
+  - enabled: 1
+    path: Assets/Scenes/PengenalanGambar.unity
+    guid: 9c461b49758f24a4e95290df39bca2f7
+  - enabled: 1
+    path: Assets/Scenes/Puzzle.unity
+    guid: 783627afaafdc7149ad4465734382e7e
+  - enabled: 1
+    path: Assets/Scenes/trace.unity
+    guid: 04b0a35b4ed890640be2417356e8abcb
   m_configObjects: {}
