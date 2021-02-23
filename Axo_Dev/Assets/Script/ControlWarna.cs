@@ -21,12 +21,12 @@ public class ControlWarna : MonoBehaviour
     void Update(){
         if(Input.GetMouseButtonDown(0)){
 			Vector3 klik = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-			CircleCollider2D warna_hitam1 = warna_hitam.GetComponent<CircleCollider2D>();
-			CircleCollider2D warna_putih1 = warna_putih.GetComponent<CircleCollider2D>();
-			CircleCollider2D warna_biru1 = warna_biru.GetComponent<CircleCollider2D>();
-			CircleCollider2D warna_kuning1 = warna_kuning.GetComponent<CircleCollider2D>();
-			CircleCollider2D warna_hijau1 = warna_hijau.GetComponent<CircleCollider2D>();
-			CircleCollider2D warna_merah1 = warna_merah.GetComponent<CircleCollider2D>();		
+			BoxCollider2D warna_hitam1 = warna_hitam.GetComponent<BoxCollider2D>();
+			BoxCollider2D warna_putih1 = warna_putih.GetComponent<BoxCollider2D>();
+			BoxCollider2D warna_biru1 = warna_biru.GetComponent<BoxCollider2D>();
+			BoxCollider2D warna_kuning1 = warna_kuning.GetComponent<BoxCollider2D>();
+			BoxCollider2D warna_hijau1 = warna_hijau.GetComponent<BoxCollider2D>();
+			BoxCollider2D warna_merah1 = warna_merah.GetComponent<BoxCollider2D>();		
 		
 			if (warna_hitam1.OverlapPoint (klik)) {
 				

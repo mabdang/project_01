@@ -15,9 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PengenalanGambar.unity
     guid: 9c461b49758f24a4e95290df39bca2f7
   - enabled: 1
-    path: Assets/Scenes/Puzzle.unity
-    guid: 783627afaafdc7149ad4465734382e7e
-  - enabled: 1
     path: Assets/Scenes/trace.unity
     guid: 04b0a35b4ed890640be2417356e8abcb
+  - enabled: 1
+    path: Assets/Scenes/puzle.unity
+    guid: 066c60edfe85da74fa5b064bdd585c4e
   m_configObjects: {}

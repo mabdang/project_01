@@ -6,6 +6,8 @@ public class Warna_hitam : MonoBehaviour
 	
 	public Camera m_camera;
 	public GameObject brush;
+	public GameObject kanvas;
+	public bool kanvas2 = false;
 
 	LineRenderer currentLineRenderer;
 	Vector2 lastPos;
@@ -20,14 +22,26 @@ public class Warna_hitam : MonoBehaviour
 	private void Update ()
 	{
 		Drawing ();
+		if(Input.GetMouseButtonDown(0)){
+			Vector3 klik = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+			BoxCollider2D kanvas1 = kanvas.GetComponent<BoxCollider2D>();
+			if (kanvas1.OverlapPoint (klik)) {
+				kanvas2 = true;
+			//	Debug.Log("area gambar");
+			} else {
+				kanvas2 = false;
+			} 
+		}
+		
+		
 	
 	}
 
 	void Drawing ()
 	{
-		if (Input.GetKeyDown (KeyCode.Mouse0)) {
+		if (Input.GetKeyDown (KeyCode.Mouse0) && kanvas2 == true) {
 			CreateBrush ();
-		} else if (Input.GetKey (KeyCode.Mouse0)) {
+		} else if (Input.GetKey (KeyCode.Mouse0) && kanvas2 == true) {
 			PointToMousePos ();
 		} else {
 			currentLineRenderer = null;
